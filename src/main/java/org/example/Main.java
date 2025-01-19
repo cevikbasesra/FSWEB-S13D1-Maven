@@ -16,6 +16,7 @@ public class Main {
         System.out.println(area(-1.0, 4.0));
 
         System.out.println(area(5.0));
+        System.out.println(area(6.0));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
@@ -35,7 +36,7 @@ public class Main {
         int lowestTemp = 25;
         int highestTemp = isSummer ? 45 : 35;
 
-        return temp < highestTemp && temp > lowestTemp;
+        return temp <= highestTemp && temp >= lowestTemp;
     }
 
     public static double area(double width, double height) {
